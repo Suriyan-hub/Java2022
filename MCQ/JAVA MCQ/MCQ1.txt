@@ -1,0 +1,379 @@
+1. What is multithreaded programming?
+a) It’s a process in which two different processes run simultaneously
+b) It’s a process in which two or more parts of same process run simultaneously
+c) It’s a process in which many different process are able to access same information
+d) It’s a process in which a single process can access information from many sources
+Ans:b
+
+2.Thread priority in Java is?
+a) Integer
+b) Float
+c) double
+d) long
+Ans:a
+
+3.What will happen if two thread of the same priority are called to be processed simultaneously?
+a) Anyone will be executed first lexographically
+b) Both of them will be executed simultaneously
+c) None of them will be executed
+d) It is dependent on the operating system
+Ans:d
+
+4.What is the name of the thread in the following Java Program?
+
+    class multithreaded_programing
+    {
+        public static void main(String args[])
+        {
+            Thread t = Thread.currentThread();
+            System.out.println(t);        
+        }
+    }
+a) main
+b) Thread
+c) System
+d) None of the mentioned
+Ans:a
+
+5.How many threads can a process contain?
+
+a) 1
+b) 2
+c) multiple
+d) none
+Ans:c
+
+6.How can we create Thread
+
+a) By Extending Thread class
+b) Implementing Runnable interface
+c) Both of the above
+d) None
+Ans:c
+
+7. Threads in java share the same memory space and resources.Select True or False:
+
+a) True
+b) False
+Ans:a
+
+8. What is the valid range of priority of a thread in Java multi-threading?
+a) 1 to 10
+b) 0 to 10
+C) 0 to 9
+d) 1 to 9
+Ans:a
+
+9.Which of these method waits for the thread to terminate?
+a) join()
+b) stop()
+c) sleep()
+d) isAlive()
+Ans:a
+
+10.Which cannot directly cause a thread to stop executing?
+a) Calling notify() method on an object
+b) Calling the wait() method on an object
+c) Calling read() method on an InputStream object
+d) Calling the SetPriority() method on a Thread object
+Ans:a
+
+11.Which of these packages contain all the collection classes?
+a) java.lang
+b) java.util
+c) java.net
+d) java.awt
+Ans:b
+
+12.Which of these methods deletes all the elements from invoking collection?
+a) clear()
+b) reset()
+c) delete()
+d) refresh()
+Ans:a
+
+13.What is Collection in Java?
+a) A group of objects
+b) A group of classes
+c) A group of interfaces
+d) None of the mentioned
+Ans:a
+
+14.Which of these interface handle sequences?
+a) Set
+b) List
+c) Comparator
+d) Collection
+Ans:b
+
+15.Which of these interface must contain a unique element?
+a) Set
+b) List
+c) Array
+d) Collection
+Ans:a
+
+16.Which of these methods can randomize all elements in a list?
+a) rand()
+b) randomize()
+c) shuffle()
+d) ambigous()
+Ans:c
+
+17.Which of these methods can convert an object into a List?
+a) SetList()
+b) ConvertList()
+c) singletonList()
+d) CopyList()
+Ans:c
+
+18.Which interface provides key-value pair?
+a) List
+b) Set
+c) Map
+d) Collection
+Ans:c
+
+19.What is the implementation of the List interface?
+a) HashMap
+b) HashSet
+c) LinkedList
+d) LinkedHashSet
+Ans:c
+
+20.What is the output of the following program?
+	public class Question_7_1 {
+     public static void main(String[] args) {
+        ArrayDeque<Integer> deque =
+              new ArrayDeque<Integer>();
+        deque.push(1);
+        deque.push(2);
+        deque.push(3);
+        deque.poll();
+        System.out.println(deque);
+    }
+   }
+a) [1, 2, 3]
+b) [1, 2]
+c) [2, 1]
+d) An exception occurs at runtime
+Ans:b
+
+21.Which of the following options can throw a NullPointerException?
+
+a) TreeSet<String> s = new TreeSet<>();
+   s.add(null);
+b) HashMap<String, String> m = new HashMap<>();
+   m.put(null, null);
+c) ArrayList<String> arr = new ArrayList<>();
+   arr.add(null);
+d) HashSet<String> s = new HashSet<String>();
+   s.add(null);
+Ans:a
+
+22.Which Interface does not allow duplicates?
+a) List
+b) Set
+c) Map
+d) SortedMap
+Ans:b
+
+23.Which data structure ArrayList internally uses?
+a) LinkedList
+b) Array
+c) Doubly LinkedList
+d) None
+Ans:b
+
+24.Which is the root interface of the Java Collection framework hierarchy?
+a) Collection
+b) Root
+c) Collections
+d) List/Set
+Ans:a
+
+25.Which of these is synchronized?
+a) TreeMap
+b) HashMap
+c) Hashtable
+d) All
+Ans:c
+
+26.Which of the following is advantage of using JDBC connection pool?
+a) Slow performance
+b) Using more memory
+c) Using less memory
+d) Better performance
+Ans:d
+
+27.Which of the following is advantage of using PreparedStatement in Java?
+a) Slow performance
+b) Encourages SQL injection
+c) Prevents SQL injection
+d) More memory usage
+Ans:c
+
+
+28.Which of the following is method of JDBC batch process?
+a) setBatch()
+b) deleteBatch()
+c) removeBatch()
+d) addBatch()
+Ans:d
+
+29. In order to transfer data between a database and an application written in the Java programming language, the JDBC API provides which of these methods?
+
+a) Methods on the ResultSet class for retrieving SQL SELECT results as Java types.
+b) Methods on the PreparedStatement class for sending Java types as SQL statement parameters.
+c) Methods on the CallableStatement class for retrieving SQL OUT parameters as Java types.
+d) All mentioned above
+Ans:d
+
+30.How many Result sets available with the JDBC 2.0 core API?
+
+a) 2
+b) 3
+c) 4
+d) 5
+Ans:a
+
+31.Which method is used to establish the connection with the specified url in a Driver Manager class?
+
+a) public static void registerDriver(Driver driver)
+b) public static void deregisterDriver(Driver driver)
+c) public static Connection getConnection(String url)
+d) public static Connection getConnection(String url,String userName,String password)
+Ans:c
+
+32.Which Indicates a result set that cannot be updated programmatically in concurrency?
+
+a) CONCUR_UPDATABLE
+b) CONCUR_READ_ONLY
+c) All of the above
+d) None of the above
+Ans:b
+
+33.JDBC RowSet is the wrapper of ResultSet,It holds tabular data like ResultSet but it is easy and flexible to use.
+
+a) True
+b) False
+Ans:a
+
+34.Which interfaces provide methods for batch processing in JDBC?
+
+a) java.sql.Statement
+b) java.sql.PreparedStatement
+c) All the above
+d) None of the above
+Ans:c
+
+35.Which is used to call the stored procedures and functions?
+
+a) CallableStatement Interface
+b) PreparedStatement Interface
+c) All the above
+d) None of the above
+Ans:a
+
+36. The ResultSet.next method is used to move to the next row of the ResultSet, making it the current row.
+
+a) True
+b) False
+Ans:a
+
+37.The performance of the application will be faster if you use PreparedStatement interface because query is compiled only once.
+
+a) True
+b) False
+Ans:a
+
+38. ResultSet object can be moved forward only and it is updatable.
+
+a) True
+b) False
+Ans:b
+
+39.Which method is used for an SQL statement that is executed frequently?
+
+a) prepareStatement
+b) prepareCall
+c) createStatement
+d) None of the above
+Ans:a
+
+40.What is the purpose of BooleanSupplier function interface?
+a) represents supplier of Boolean-valued results
+b) returns Boolean-valued result
+c) There is no such function interface
+d) returns null if Boolean is passed as argument
+Ans:a
+
+41. What is the return type of lambda expression?
+a) String
+b) Object
+c) void
+d) Function
+Ans:d
+
+42.Which is the new method introduced in java 8 to iterate over a collection?
+a) for (String i : StringList)
+b) foreach (String i : StringList)
+c) StringList.forEach()
+d) List.for()
+Ans:c
+
+43.What are the two types of Streams offered by java 8?
+a) sequential and parallel
+b) sequential and random
+c) parallel and random
+d) random and synchronized
+Ans:a
+
+44.What does SAM stand for in the context of Functional Interface?
+a) Single Ambivalue Method
+b) Single Abstract Method
+c) Simple Active Markup
+d) Simple Abstract Markup
+Ans:b
+
+45.The newly introduced Streams API is available in which package of java 8 
+a) java.io.streams
+b) java.io.stream
+c) java.util.streams
+d) java.util.stream
+Ans:d
+
+46. Lambda expressions in java 8 are based on 
+a) Procedural programming
+b) Functional programming
+c) Data programming
+d) All
+Ans:b
+
+47.Which of these does Stream map() operates on 
+a) Class
+b) Interface
+c) Predicate
+d) Function
+Ans:d
+
+48.A lambda expression can be used 
+a) As a method argument
+b) As a conditional expression in an if statement
+c) In a return statement
+d) In a throw statement
+Ans :a
+
+49.Which of the following functional interface represents a function that accepts a double-valued argument and produces a long-valued result?
+a) DoubleToLongFunction
+b) DoubleUnaryOperator
+c) Function
+d) IntBinaryOperator
+Ans:a
+
+50.A pipeline is a sequence of what operations in java 8
+a) multi-threading
+b) concurrent
+c) consequent
+d) stream
+Ans:d
