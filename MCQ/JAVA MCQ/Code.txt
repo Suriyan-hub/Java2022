@@ -1,0 +1,5 @@
+1.How to swap two numbers without using a third variable?
+2.Check if two arrays contains same elements?
+3.Program to get distinct characters and their count in a String?
+4.Write a Java Program to find the duplicate characters in a string.
+5.How to merge two lists in java?
